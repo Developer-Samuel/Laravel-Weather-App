@@ -1,8 +1,8 @@
 <template>
     <div class="content w-full h-screen bg-black">
         <div
-            :class="['container relative md:w-[1000px] w-full h-full border-l-2 border-r-2 border-solid border-white md:px-0 px-2 mx-auto',
-                    errorMessage ? 'bg-red-600' : 'bg-green-700']"
+            :class="['container relative w-full h-full border-l-2 border-r-2 border-solid border-white md:px-0 px-2 mx-auto',
+                    errorMessage ? 'bg-red-600' : 'bg-green-800']"
         >
             <div v-if="errorMessage" class="error bg-red-600 w-full">
                 <p class="relative top-36 text-white text-2xl font-bold text-center">
@@ -20,7 +20,7 @@
             <form @submit.prevent="getWeather" class="absolute transform -translate-y-1/2 top-1/2 w-full bg-black text-center border-t-2 border-b-2 border-solid border-white p-4">
                 <div class="w-full mb-2">
                     <label for="city" class="text-white text-lg font-bold">City / Village / Country:</label>
-                    <div class="px-32">
+                    <div class="px-80">
                         <input v-model="city" name="city" class="w-full text-md rounded-lg outline-0 mt-1.5 px-2 py-1">
                     </div>
                 </div>
