@@ -2,7 +2,7 @@
     <div class="content w-full h-screen bg-black">
         <div
             :class="['container relative md:w-[1000px] w-full h-full border-l-2 border-r-2 border-solid border-white md:px-0 px-2 mx-auto',
-                    errorMessage ? 'bg-red-600' : 'bg-green-900']"
+                    errorMessage ? 'bg-red-600' : 'bg-green-700']"
         >
             <div v-if="errorMessage" class="error bg-red-600 w-full">
                 <p class="relative top-36 text-white text-2xl font-bold text-center">
