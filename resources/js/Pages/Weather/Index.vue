@@ -1,7 +1,7 @@
 <template>
     <div class="content w-full h-screen bg-black">
         <div
-            :class="['container relative md:w-[750px] w-full h-full border-l-2 border-r-2 border-solid border-white md:px-0 px-2 mx-auto',
+            :class="['container relative md:w-[1000px] w-full h-full border-l-2 border-r-2 border-solid border-white md:px-0 px-2 mx-auto',
                     errorMessage ? 'bg-red-600' : 'bg-green-900']"
         >
             <div v-if="errorMessage" class="error bg-red-600 w-full">
@@ -10,7 +10,7 @@
                 </p>
             </div>
 
-            <div v-if="weatherData" class="relative w-full text-white text-center">
+            <div v-if="weatherData" class="relative w-full text-lg text-white text-center">
                 <img class="mx-auto w-[76px] h-[76px]" :src="weatherData.imageData">
                 <div><b>City / Village / Country: </b>{{ weatherData.city }}</div>
                 <div><b>Degrees Celsius: </b>{{ weatherData.tempCelsius }} &deg;C</div>
