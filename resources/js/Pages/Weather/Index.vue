@@ -20,7 +20,9 @@
             <form @submit.prevent="getWeather" class="absolute transform -translate-y-1/2 top-1/2 w-full bg-black text-center border-t-2 border-b-2 border-solid border-white p-4">
                 <div class="w-full mb-2">
                     <label for="city" class="text-white text-lg font-bold">City / Village / Country:</label>
-                    <input v-model="city" name="city" class="w-full text-md rounded-lg outline-0 mt-1.5 px-2 py-1">
+                    <div class="px-32">
+                        <input v-model="city" name="city" class="w-full text-md rounded-lg outline-0 mt-1.5 px-2 py-1">
+                    </div>
                 </div>
                 <div class="relative flex justify-center mt-8">
                     <button type="submit" class="bg-green-500 hover:bg-green-600 transition duration-500 text-black text-md font-bold px-3 py-2 rounded-full cursor-pointer">Get Weather</button>
